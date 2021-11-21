@@ -1,66 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portifólio Web</title>
-  <style>
-    img {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    body {
-      background-color: rgb(238, 244, 237);
-      color: rgb(31, 48, 68);
-      font-family: monospace;
-      font-size: 20px;
-    }
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio Web</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div>
+      <h1 id="nome" class="link">Débora Rodrigues Serra</h1>
+    </div>
 
-    .link {
-      color: rgb(99, 41, 56);
-    }
+    <div>
+      <img src="Perfil.jpeg" alt="Foto de perfil Débora" width="300px" id="img">
+    </div>
 
-    #nome {
-      background-color: rgb(180, 187,162);
-      text-align: center;
-      font-size: 2em;
-      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-
-    h2 {
-      background-color: rgb(180, 187,162);
-    }
-
-    p {
-      text-align: justify;
-    }
-
-    .me {
-      text-align: center;
-    }
-
-    a {
-      color:rgb(99, 41, 56);
-    }
-
-    #habilidades {
-      background-color: rgb(141, 169, 196);
-    }
-    
-  </style>
-</head>
-<body>
-  <h1 id="nome" class="link">Débora Rodrigues Serra</h1>
-  <hr>
-
-  <img src="Perfil.jpeg" alt="Foto de perfil Débora" width="300px" id="img">
-  <p class="me">Estudante de Desenvolvimento Web pela <em>Trybe</em> | Mestre em Química pela <em>UnB</em></p>
-  <p class="me">Cosmetóloga pela <em>iCosmetologia</em> | pós-graduada em Gastronomia pela <em>PUC-RS</em></p>
+    <div class="me">
+      <p>Estudante de Desenvolvimento Web pela <em>Trybe</em> | Mestre em Química pela <em>UnB</em></p>
+      <p>Cosmetóloga pela <em>iCosmetologia</em> | pós-graduada em Gastronomia pela <em>PUC-RS</em></p>
+    </div>
   
 
-    <ol class="link"><strong>Índice:</strong>
+    <h3 class="link">Índice:</h3>
+    <ol>
       <li><a href=#nome>Meu nome;</a></li>
       <li><a href=#perfil>Quem sou eu;</a></li>
       <li><a href=#formação>Minha formação;</a></li>
@@ -70,34 +33,40 @@
     </ol>
   
 
-  <h2 id="perfil" class="link">Quem sou eu:</h2>
-  <hr>
-  <p>Sou brasileira, nascida em Brasília/DF. Morei por dois meses em Itapema/SC e por um ano e oito meses em Andradas/MG.<br></br> Tenho 29 anos, gosto de assistir filmes e séries, aprender coisas novas, ler, pintar o cabelo, enfim, um pouquinho de tudo. <br></br> Meu estilo de música preferido é Rock, mas dependendo do dia, escuto de tudo (exceto funk rsrs).</p>
+    <h2 id="perfil" class="link">Quem sou eu:</h2>
+  
+      <p>Sou brasileira, nascida em Brasília/DF. Morei por dois meses em Itapema/SC e por um ano e oito meses em Andradas/MG.<br></br> Tenho 29 anos, gosto de assistir filmes e séries, aprender coisas novas, ler, pintar o cabelo, enfim, um pouquinho de tudo. <br></br> Meu estilo de música preferido é Rock, mas dependendo do dia, escuto de tudo (exceto funk rsrs).</p>
+
+      <p>Um blog que curtia muito quando tinha mais tempo era esse <a href="https://acidezfeminina.com.br/" target="_blank">aqui</a>.</p>
     
-  <h2 id="formação" class="link">Minha formação</h2>
-  <hr>
-  <p>Possuo uma graduação e um mestrado em Química, um MBA em Tecnologia Cosmética, uma pós-graduação em <br></br>Gastronomia e cozinha autoral, mas agora acredito ter encontrado minha verdadeira paixão: <strong>Desenvolvimento Web</strong></p>
+    <h2 id="formação" class="link">Minha formação</h2>
   
+      <p>Possuo uma graduação e um mestrado em Química, um MBA em Tecnologia Cosmética, uma pós-graduação em <br></br>Gastronomia e cozinha autoral, mas agora acredito ter encontrado minha verdadeira paixão: <strong>Desenvolvimento Web</strong></p>
+    
+    <div id="lista">
+      <h3 class="link">Lista de habilidades</h3>
 
-  <p>Um blog que curtia muito quando tinha mais tempo era esse <a href="https://acidezfeminina.com.br/" target="_blank">aqui</a>.</p> 
+      <ul id="habilidades">
+        <li><em>Facilidade de aprendizado;</em></li>
+        <li>Eclética;</li>
+        <li>Iniciando Linux;</li>
+        <li>Iniciando Git & Git Hub;</li>
+        <li>Iniciando html;</li>
+        <li>Química analítica.</li>
+      </ul>
+    </div>
+    
+    <div id="bottom">
+      <p id="linkedin">
+        <a href="https://www.linkedin.com/in/debora-r-serra/" target="_blank">Linkedin</a>
+      </p>
+    
+      <p id="github">
+        <a href="https://github.com/DeboraSerra">GitHub</a>
+      </p>
+  </div>
 
-  
-  <h4 id="habilidades" class="link">Lista de habilidades</h4>
-  <ul>
-    <li><em>Facilidade de aprendizado;</em></li>
-    <li>Eclética;</li>
-    <li>Iniciando Linux;</li>
-    <li>Iniciando Git & Git Hub;</li>
-    <li>Iniciando html;</li>
-    <li>Química analítica.</li>
-    </ul>
-    <hr>
-
-  <a href="https://www.linkedin.com/in/debora-r-serra/" target="_blank"><p id="linkedin">Linkedin</p></a>
-
-  <p id="github"><a href="https://github.com/DeboraSerra">GitHub</a></p>
 
 
-
-</body>
+  </body>
 </html>
