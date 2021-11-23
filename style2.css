@@ -1,0 +1,107 @@
+body {
+  background-color: #1E2434;
+  color: #CDB9AE;
+  font-family: monospace;
+  font-size: 20px;
+  margin: 0;
+}
+
+#index li {
+  display: inline-block;
+  padding: 5px;
+  font-size: 1.5em;
+  margin: 5px 10px;
+}
+
+a {
+  color: #CDB9AE;
+  text-decoration: none;
+}
+
+#index a:hover {
+  background-color: #CDB9AE;
+  color: #76394B;
+  padding: 10px;
+  margin: 0;
+}
+
+#index a:active {
+  color: #1E2434;
+}
+
+#index {
+  background-color: #293A46;
+  line-height: 40px;
+  text-align: center;
+}
+
+img {
+  border-radius: 50%;
+  display: block;
+  float: left;
+  padding: 5px;
+  background-color: #504448;
+  position: relative;
+}
+
+#nome {
+  background-color: #504448;
+  text-align: center;
+}
+
+.me {
+padding: 100px;
+text-align: center;
+font-size: 27px;
+margin-left: 400px;
+margin-bottom: 90px;
+}
+
+#perfil, #formação {
+  background-color: #504448;
+  padding: 10px;
+}
+
+section {
+  margin: 50px 10px;
+  line-height: 35px;
+}
+
+#Fred {
+  float: right;
+}
+
+#lista {
+  background-color: #CDB9AE;
+  color: #76394B;
+  width: 500px;
+  margin: auto;
+}
+
+#lista h3 {
+  text-align: center;
+}
+
+#linkedin {
+  position: absolute;
+  left: 15px;
+}
+
+#github {
+  position: absolute;
+  left: 150px;
+}
+
+#back {
+  display: block;
+  width: 200px;
+  margin: auto;
+  background-color: #293A46;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 200px;
+}
