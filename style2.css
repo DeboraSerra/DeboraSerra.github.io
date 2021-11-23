@@ -25,6 +25,10 @@ a {
   margin: 0;
 }
 
+#index a:active {
+  color: #1E2434;
+}
+
 #index {
   background-color: #293A46;
   line-height: 40px;
@@ -78,8 +82,26 @@ section {
   text-align: center;
 }
 
-#footer img {
-  display: block;  
-  margin-left: 20px;
-  margin-bottom: 70px;
+#linkedin {
+  position: absolute;
+  left: 15px;
+}
+
+#github {
+  position: absolute;
+  left: 150px;
+}
+
+#back {
+  display: block;
+  width: 200px;
+  margin: auto;
+  background-color: #293A46;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 200px;
 }
