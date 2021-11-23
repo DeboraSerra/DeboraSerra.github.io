@@ -3,7 +3,7 @@ body {
   color: #CDB9AE;
   font-family: monospace;
   font-size: 20px;
-  margin: 0;
+  margin: 0px;
 }
 
 #index li {
@@ -33,6 +33,7 @@ a {
   background-color: #293A46;
   line-height: 40px;
   text-align: center;
+  margin: 0px;
 }
 
 img {
@@ -42,11 +43,13 @@ img {
   padding: 5px;
   background-color: #504448;
   position: relative;
+  margin-left: 30px;
 }
 
 #nome {
   background-color: #504448;
   text-align: center;
+  margin-top: 50px;
 }
 
 .me {
@@ -60,15 +63,17 @@ margin-bottom: 90px;
 #perfil, #formação {
   background-color: #504448;
   padding: 10px;
+  padding-left: 30px;
 }
 
 section {
-  margin: 50px 10px;
+  margin: 50px 30px;
   line-height: 35px;
 }
 
 #Fred {
   float: right;
+  margin-right: 15px;
 }
 
 #lista {
@@ -84,12 +89,12 @@ section {
 
 #linkedin {
   position: absolute;
-  left: 15px;
+  left: 5px;
 }
 
 #github {
   position: absolute;
-  left: 150px;
+  left: 120px;
 }
 
 #back {
