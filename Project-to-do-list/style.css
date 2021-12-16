@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-size: 20px;
+  background-color: rgb(98, 160, 131);
+  color: rgb(2, 39, 75);
+  text-align: center;
+}
+
+input {
+  padding: 15px;
+  width: 400px;
+  margin-bottom: 50px;
+}
+
+.completed {
+  text-decoration: line-through solid rgb(0, 0, 0);
+}
+
+.selected {
+  background-color: rgb(128, 128, 128);
+}
+
+button {
+  margin: 10px;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: rgb(42, 66, 42);
+  color: white;
+  font-size: 20px;
+}
+
+header {
+  margin-top: 70px;
+  margin-bottom: 25px;
+  font-size: 1.5em;
+}
+
+p {
+  margin: 20px;
+}
+
+section {
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  border-radius: 20px;
+}
+
+li {
+  list-style-position: inside;
+  margin: 50px;
+  font-size: 30px;
+}
