@@ -113,4 +113,9 @@ footer {
 
 #project-links {
   text-align: center;
+
+}
+
+#project-links ul li{
+  list-style: none;
 }
