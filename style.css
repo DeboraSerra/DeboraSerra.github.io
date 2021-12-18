@@ -1,0 +1,164 @@
+body {
+  background-color: #1E2434;
+  color: #CDB9AE;
+  font-family: monospace;
+  font-size: 20px;
+  margin: 0px;
+}
+
+.flex-container {
+  display: flex;
+  flex: 1 300px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.flex-container2 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: auto;
+  flex: 1 100px;
+}
+
+.flex-container2 h2 {
+  align-self: center;
+  width: 100%;
+  text-align: center;
+}
+
+#about-me {
+  display: flex;
+  justify-content: space-between;
+}
+
+#about-me img {
+  order: 1;
+}
+
+#index li {
+  display: inline-block;
+  padding: 5px;
+  font-size: 1.2em;
+  margin: 5px 10px;
+}
+
+a {
+  color: #CDB9AE;
+  text-decoration: none;
+}
+
+#index a:hover {
+  background-color: #CDB9AE;
+  color: #76394B;
+  padding: 10px;
+  margin: 0;
+}
+
+#index a:active {
+  color: #1E2434;
+}
+
+#index {
+  background-color: #293A46;
+  line-height: 40px;
+  text-align: center;
+  margin: 0px;
+}
+
+img {
+  border-radius: 50%;
+  padding: 5px;
+  background-color: #504448;
+  margin-left: 30px;
+}
+
+#name {
+  background-color: #504448;
+  text-align: center;
+  margin: auto;
+}
+
+#profile, #professional-life {
+  background-color: #504448;
+  padding: 10px;
+  padding-left: 30px;
+}
+
+.flex-container3 {
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: column wrap;
+  width: 80%;
+}
+
+.flex-container3 h1 {
+  width: 100%;
+}
+
+.box2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box2 img {
+  margin-right: 30px;
+  margin-top: 20px;
+}
+
+.list {
+  background-color: #CDB9AE;
+  color: #76394B;
+  width: 500px;
+  margin: auto;
+}
+
+.list a {
+  color: #76394B;
+}
+
+.list h3 {
+  text-align: center;
+}
+
+.flex-container4 {
+  display: flex;
+  flex-flow: column;
+  width: 80%;
+  margin: auto;
+}
+
+.flex-container4 h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.flex-container5 {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+.flex-container6 {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.flex-container6 #back {
+  margin: 30px;
+}
+
+.flex-container7 {
+  display: flex;
+  flex-flow: row;
+  order: 1;
+  margin: 20px;
+  margin-bottom: 100px;
+}
+

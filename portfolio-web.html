@@ -4,79 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Web</title>
-    <link rel="stylesheet" href="style2.css">
+    <title>Portfolio Web</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <nav>
-      <ol id="index">
-        <li><a href=#perfil>Quem sou eu</a></li>
-        <li><a href=#formação>Minha formação</a></li>
-        <li><a href=#habilidades>Lista de habilidades</a></li>
-        <li><a href=#footer>Perfis</a></li>
-        <li><a href="#project-links">My projects</a></li>
+      <ol id="index" class="flex-container">
+        <li class="box1"><a href=#profile>Who am I</a></li>
+        <li class="box1"><a href=#professional-life>My professional history</a></li>
+        <li class="box1"><a href=#skills>My skills</a></li>
+        <li class="box1"><a href=#footer>My social media</a></li>
+        <li class="box1"><a href="#project-links">My projects</a></li>
       </ol>
     </nav>
 
-    <header id="nome">
-      <h1>Débora Rodrigues Serra</h1>
-    </header>
-
     
-    <img src="Perfil.jpeg" alt="Foto de perfil Débora" width="400px" id="img">
-    
-
-    <section class="me">
-      <p>Estudante de Desenvolvimento Web pela <em>Trybe</em> | Mestre em Química pela <em>UnB</em></p>
-      <p>Cosmetóloga pela <em>iCosmetologia</em> | pós-graduada em Gastronomia pela <em>PUC-RS</em></p>
-    </section>
-    
-    <main>
-      <h2 id="perfil">Quem sou eu:</h2>
-        <section id="aboutme">
-              
-          <p>Sou brasileira, nascida em Brasília/DF. Morei por dois meses em Itapema/SC e por um ano e oito meses em Andradas/MG. <img src="./images/Fred.jpg" width="200px" alt="O Fred Weasley mais lindo de todos" id="Fred"></p>
-      
-          <p>Tenho 29 anos, gosto de assistir filmes e séries, aprender coisas novas, ler, pintar o cabelo, enfim, um pouquinho de tudo.</p>
-
-          <p>Sou mãe de um cachorrinho lindo chamado <strong>Fred Weasley</strong>.</p>
-      
-          <p>Meu estilo de música preferido é Rock, mas dependendo do dia, escuto de tudo (exceto funk rsrs).</p>
-
-          <p>Um blog que curtia muito quando tinha mais tempo era esse <a href="https://acidezfeminina.com.br/" target="_blank">aqui</a>.</p>
-        </section>
-    
-    <h2 id="formação">Minha formação</h2>
-      <section>
+    <section class="flex-container3">
+        <h1 id="name">Débora Rodrigues Serra</h1>
+      <section class="box2">
+        <img src="Perfil.jpeg" alt="Débora's profile Photo" width="400px" id="img">
         
-        <p>Possuo uma graduação e um mestrado em Química, um MBA em Tecnologia Cosmética, uma pós-graduação em Gastronomia e cozinha autoral, mas agora acredito ter encontrado minha verdadeira paixão: <strong>Desenvolvimento Web</strong></p>
-    
-        <div id="lista">
-          <h3 class="link">Lista de habilidades</h3>
+        <section class="me">
+          <p>Web developer student in <em>Trybe</em> | Masters degree in Chemistry by <em>UnB</em></p>
+          <p>Cosmetologist by <em>iCosmetologia</em> | Post-graduated in Gastronomy in <em>PUC-RS</em></p>
+        </section>
+      </section>
+    </section>
 
-          <ul id="habilidades">
-            <li><em>Facilidade de aprendizado;</em></li>
-            <li>Inglês;</li>
-            <li>Eclética;</li>
-            <li>Iniciando Linux;</li>
-            <li>Iniciando Git & Git Hub;</li>
-            <li>Iniciando html;</li>
-            <li>Química analítica.</li>
+    <main>
+      <section class="flex-container2">
+
+        <h2 id="profile">Who am I</h2>
+
+        <section id="about-me">
+          <img src="./images/Fred.jpg" width="200px" alt="The most beautiful Fred Weasley of all" id="Fred">
+
+          <section>
+            <p>I am brazilian, born in Brazilia?DF. I've lived for two months in Itapema/SC and for one year and eight months in Andradas/MG. </p>
+        
+            <p> I am 29 years old, I like to watch movies and TV series, learn new things, read, dye my hair, a little of everything.</p>
+
+            <p>I'm the mother of a beautiful dog called <strong>Fred Weasley</strong>.</p>
+        
+            <p>My favorite music genre is Rock, but I listen a bit of almost everything, depending on the day (rsrs).</p>
+
+            <p>A blog that I used to love when I had more time was <a href="https://acidezfeminina.com.br/" target="_blank">this one</a>.</p>
+          </section>
+        </section>
+      </section>
+    
+      <section class="flex-container4">
+
+        <h2 id="professional-life">My professional history</h2>
+        
+        <p>I have a masters degree in Chemistry, an MBA in Cosmetics Tecnology and a post-graduation in Gastronomy, but now I believe I've finally found my true passion: <strong>Web Development</strong></p>
+    
+      </section>
+      <section class="flex-container5">
+        <div class="list">
+          <h3 class="link">My skills</h3>
+
+          <ul id="skills">
+            <li><em>I tend to learn new things easily;</em></li>
+            <li>Ecletic;</li>
+            <li>Starting Linux;</li>
+            <li>Starting Git & Git Hub;</li>
+            <li>Starting html;</li>
+            <li>Starting css;</li>
+            <li>Starting JavaScript;</li>
+            <li>Analitic Chemistry.</li>
           </ul>
         </div>
-      </section>
-      <section id="project-links">
-        <h2>My projects</h2>
-        <ul id="my-projects"></ul>
+      
+
+        <section id="project-links" class="list">
+          <h3>My projects</h3>
+          <ul id="my-projects"></ul>
+        </section>
       </section>
     </main>
     
-    <footer id="footer">
-      <a href="https://www.linkedin.com/in/debora-r-serra/" target="_blank"><img src="./images/linkedin.png" width="100px" alt="Logo do Linkedin" id="linkedin"></a>
-      <a href="https://github.com/DeboraSerra" target="_blank"><img src="images/github.png" width="100px" alt="Logo do GitHub"
-      id="github"></a>
+    <footer id="footer" class="flex-container6">
+      <section class="flex-container7">
+        <a href="https://www.linkedin.com/in/debora-r-serra/" target="_blank"><img src="./images/linkedin.png" width="100px" alt="Linkedin logo" id="linkedin"></a>
+        <a href="https://github.com/DeboraSerra" target="_blank"><img src="images/github.png" width="100px" alt="GitHub logo"
+        id="github"></a>
+      </section>
       
-      <a href="#index" id="back">Voltar ao topo</a>
+      <a href="#index" id="back">Back to the top</a>
     </footer>
 
 
