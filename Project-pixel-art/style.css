@@ -11,11 +11,26 @@
   border: 1px solid black;
 }
 
+#pixel-board{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin: 20px;
+  margin-bottom: 70px;
+}
+
+.pixel-line {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: auto;
+}
+
 .pixel {
   border: 1px solid black;
   display: inline-block;
-  width: 1.5%;
-  height: 1em;
+  width: 40px;
+  height: 40px;
 }
 
 button {

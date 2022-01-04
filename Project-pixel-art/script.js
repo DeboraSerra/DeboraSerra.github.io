@@ -8,20 +8,15 @@ const board = document.querySelector('#pixel-board');
 const input = document.querySelector('input');
 const buttonInput = document.querySelector('#generate-board');
 
-const number1 = (Math.random() * 255) + 1;
-const number2 = (Math.random() * 255) + 1;
-const number3 = (Math.random() * 255) + 1;
-const number4 = Math.random() * 255 + 1;
-const number5 = Math.random() * 255 + 1;
-const number6 = Math.random() * 255 + 1;
-const number7 = Math.random() * 255 + 1;
-const number8 = Math.random() * 255 + 1;
-const number9 = Math.random() * 255 + 1;
+function randomNumber() {
+  const number = parseInt(Math.random() * 255 + 1);
+  return number;
+}
 
 firstColor.style.backgroundColor = 'black';
-secondColor.style.backgroundColor = `rgb(${number1}, ${number2}, ${number3})`;
-thirdColor.style.backgroundColor = `rgb(${number4}, ${number5}, ${number6})`;
-fourthColor.style.backgroundColor = `rgb(${number7}, ${number8}, ${number9})`;
+secondColor.style.backgroundColor = `rgb(${randomNumber()}, ${randomNumber()}, ${randomNumber()})`;
+thirdColor.style.backgroundColor = `rgb(${randomNumber()}, ${randomNumber()}, ${randomNumber()})`;
+fourthColor.style.backgroundColor = `rgb(${randomNumber()}, ${randomNumber()}, ${randomNumber()})`;
 
 function colorPixel(e) {
   const myColor = document.querySelector('.selected').style.backgroundColor;
@@ -32,62 +27,73 @@ function colorPixel(e) {
   }
 }
 
+function newLine(x) {
+  for (let i = 0; i < x; i += 1) {
+    let pixelLine = document.createElement("div");
+    pixelLine.className = "pixel-line";
+    board.appendChild(pixelLine);
+  }
+}
 function initialize() {
-  for (let i = 0; i < 5; i += 1) {
-    for (let x = 0; x < 5; x += 1) {
-      const myPixel = document.createElement('div');
-      myPixel.className = 'pixel';
-      myPixel.style.backgroundColor = 'white';
-      myPixel.style.width = '40px';
-      myPixel.style.height = '40px';
-      board.appendChild(myPixel);
-      myPixel.addEventListener('click', colorPixel);
+  newLine(5);
+
+  let pixelLine = document.querySelectorAll('.pixel-line');
+  
+  for (let x = 0; x < 5; x += 1){
+    for (let i = 0; i < 5; i += 1) {
+      const myPixel = document.createElement("div");
+      myPixel.className = "pixel";
+      myPixel.style.backgroundColor = "white";
+      pixelLine[i].appendChild(myPixel);
+      myPixel.addEventListener("click", colorPixel);
     }
-    const newLine = document.createElement('br');
-    board.appendChild(newLine);
   }
 }
 
 window.onload = initialize();
 
 function lessThanFive() {
-  for (let i = 0; i < 5; i += 1) {
-    for (let x = 0; x < 5; x += 1) {
-      const myPixel = document.createElement('div');
-      myPixel.className = 'pixel';
-      myPixel.style.backgroundColor = 'white';
-      board.appendChild(myPixel);
-      myPixel.addEventListener('click', colorPixel);
+  newLine(5);
+
+  let pixelLine = document.querySelectorAll(".pixel-line");
+
+  for (let x = 0; x < 5; x += 1) {
+    for (let i = 0; i < 5; i += 1) {
+      const myPixel = document.createElement("div");
+      myPixel.className = "pixel";
+      myPixel.style.backgroundColor = "white";
+      pixelLine[i].appendChild(myPixel);
+      myPixel.addEventListener("click", colorPixel);
     }
-    const newLine = document.createElement('br');
-    board.appendChild(newLine);
   }
 }
 
 function moreThanFifty() {
-  for (let i = 0; i < 50; i += 1) {
-    for (let x = 0; x < 50; x += 1) {
-      const myPixel = document.createElement('div');
-      myPixel.className = 'pixel';
-      myPixel.style.backgroundColor = 'white';
-      board.appendChild(myPixel);
-      myPixel.addEventListener('click', colorPixel);
+  newLine(50);
+
+  let pixelLine = document.querySelectorAll(".pixel-line");
+
+  for (let x = 0; x < 50; x += 1) {
+    for (let i = 0; i < 50; i += 1) {
+      const myPixel = document.createElement("div");
+      myPixel.className = "pixel";
+      myPixel.style.backgroundColor = "white";
+      pixelLine[i].appendChild(myPixel);
+      myPixel.addEventListener("click", colorPixel);
     }
-    const newLine = document.createElement('br');
-    board.appendChild(newLine);
   }
 }
 
 function createLine() {
+  let pixelLine = document.querySelectorAll(".pixel-line");
+
   for (let x = 0; x < input.value; x += 1) {
-    const myPixel = document.createElement('div');
-    myPixel.className = 'pixel';
-    myPixel.style.backgroundColor = 'white';
-    board.appendChild(myPixel);
-    myPixel.addEventListener('click', colorPixel);
+    const myPixel = document.createElement("div");
+    myPixel.className = "pixel";
+    myPixel.style.backgroundColor = "white";
+    pixelLine[x].appendChild(myPixel);
+    myPixel.addEventListener("click", colorPixel);
   }
-  const newLine = document.createElement('br');
-  board.appendChild(newLine);
 }
 
 function createBoard() {
@@ -96,6 +102,10 @@ function createBoard() {
   } else if (input.value > 50) {
     moreThanFifty();
   } else {
+    const myNumber = input.value;
+
+    newLine(myNumber);
+
     for (let i = 0; i < input.value; i += 1) {
       createLine();
     }
@@ -105,20 +115,25 @@ function createBoard() {
 function deleteBoard() {
   if (!input.value) {
     alert('Board inválido!');
+    Location.reload();
   } else {
-    const pixels = document.querySelectorAll('.pixel');
-    for (let i = 0; i < pixels.length; i += 1) {
-      board.removeChild(pixels[i]);
-    }
-    const line = document.querySelectorAll('br');
-    for (let i = 0; i < line.length; i += 1) {
-      board.removeChild(line[i]);
+    const lines = document.querySelectorAll('.pixel-line');
+    for (let i = 0; i < lines.length; i += 1) {
+      board.removeChild(lines[i]);
     }
   }
   createBoard();
 }
 
 buttonInput.addEventListener('click', deleteBoard);
+function enter(e) {
+  if (e.key === "Enter") {
+    deleteBoard();
+  }
+}
+
+input.addEventListener("keyup", enter);
+
 
 function selectColor(e) {
   for (let i = 0; i < colors.length; i += 1) {
