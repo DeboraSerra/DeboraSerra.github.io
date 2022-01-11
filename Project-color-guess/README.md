@@ -1,6 +1,8 @@
 # Bonus project - Color Guess
 
-The project Color Guess was a bonus project where we had to follow the requisites below:
+The project Color Guess was a bonus project to create a game where each refresh of the page will generate a collection of 3 numbers between 0 and 255, and six circles with random color. To play the game, the user must guess which of the six colors is a match to the collection shown. To each right answer, the player will earn 3 points. To the next fase just click the restart button.
+
+This project was produced following the requisites below:
 
 1. Add to your site a title with the name of the game.
 
