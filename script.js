@@ -7,6 +7,7 @@ let projectLink = [
   "https://deboraserra.github.io/Project-mystery-letter/index.html",
   "https://deboraserra.github.io/Project-meme-generator/index.html",
   "https://deboraserra.github.io/Project-color-guess/index.html",
+  "https://deboraserra.github.io/Project-Trybewarts/index.html",
 ];
 let projectText = [
   'Project Lessons Learned',
@@ -15,6 +16,7 @@ let projectText = [
   'Project Mystery Letter',
   'Project Meme Generator',
   'Project Color Guess',
+  'Project Trybewarts'
 ]
 
 for (let i = 0; i < projectLink.length; i += 1) {
