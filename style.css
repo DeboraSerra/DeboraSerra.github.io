@@ -160,6 +160,12 @@ img {
   margin-bottom: 100px;
 }
 
+.badge {
+  border-radius: 5px;
+  width: 10vw;
+  margin-top: 3vh;
+}
+
 @media screen and (max-width: 768px) {
   body {
     background-color: #1E2434;
@@ -319,4 +325,3 @@ img {
   }
 
 }
-
