@@ -1,0 +1,101 @@
+body {
+  background-color: black;
+  font-size: 6vh;
+  color: white;
+}
+
+.clock {
+  display: flex;
+  margin: auto;
+  width: 80vw;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.time-bar {
+  box-shadow: 0 0 15px white;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 2vw;
+  height: fit-content;
+  width: 4vw;
+  text-align: center;
+  position: absolute;
+  top: 40vh;
+}
+
+.sep1 {
+  margin-top: 43.5vh;
+  margin-left: -7vw;
+}
+
+.sep2 {
+  margin-top: 43.5vh;
+  margin-left: 14vw;
+}
+
+.time-bar#hour1 {
+  left: 15vw;
+}
+
+.time-bar#hour2 {
+  left: 20vw;
+}
+
+.time-bar#min1 {
+  left: 30vw;
+}
+
+.time-bar#min2 {
+  left: 35vw;
+}
+
+.time-bar#sec1 {
+  left: 45vw;
+}
+
+.time-bar#sec2 {
+  left: 50vw;
+}
+
+.time-bar.n0 {
+  top: 40vh;
+}
+
+.time-bar.n1 {
+  top: 33vh;
+}
+
+.time-bar.n2 {
+  top: 26.5vh;
+}
+
+.time-bar.n3 {
+  top: 19.5vh;
+}
+
+.time-bar.n4 {
+  top: 12.5vh;
+}
+
+.time-bar.n5 {
+  top: 5.5vh;
+}
+
+.time-bar.n6 {
+  top: -1.5vh;
+}
+
+.time-bar.n7 {
+  top: -8vh;
+}
+
+.time-bar.n8 {
+  top: -14.8vh;
+}
+
+.time-bar.n9 {
+  top: -22vh;
+}
