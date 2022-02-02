@@ -1,0 +1,194 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.clock {
+  position: relative;
+  width: 280px;
+  margin: auto;
+  font-size: 2em;
+}
+
+.time-bar {
+  position: absolute;
+  width: 30px;
+  line-height: 40px;
+  box-shadow: 0 0 20px rgba(141, 119, 119, 0.404);
+  text-align: center;
+  margin: 5px;
+  transition: .3s;
+}
+
+#hour1 {
+  right: 235px;
+}
+
+#hour2 {
+  right: 197px;
+}
+
+.sep2 {
+  position: absolute;
+  right: 182px;
+  top: 300px;
+  line-height: 40px;
+}
+
+#min1 {
+  right: 137px;
+}
+
+#min2 {
+  right: 92px;
+}
+
+.sep1 {
+  position: absolute;
+  right: 80px;
+  top: 300px;
+  line-height: 40px;
+}
+
+#sec1 {
+  right: 37px;  
+}
+
+#sec2 {
+  right: 0;
+}
+
+.n0 {
+  top: 302px;
+}
+
+.n1 {
+  top: calc(302px - 40px)
+}
+
+.n2 {
+  top: calc(302px - 80px)
+}
+
+.n3 {
+  top: calc(302px - 120px)
+}
+
+.n4 {
+  top: calc(302px - 160px)
+}
+
+.n5 {
+  top: calc(302px - 200px)
+}
+
+.n6 {
+  top: calc(302px - 240px)
+}
+
+.n7 {
+  top: calc(302px - 280px)
+}
+
+.n8 {
+  top: calc(302px - 320px)
+}
+
+.n9 {
+  top: calc(302px - 360px)
+}
+
+.secs1, .secs2 {
+  color: rgba(255, 255, 255, 0.459);
+}
+
+@media screen and (min-width: 800px) {
+  .clock {
+    width: 500px;
+    margin: auto;
+    font-size: 3em;
+  }
+  
+  .time-bar {
+    width: 50px;
+    line-height: 60px;
+  }
+  
+  #hour1 {
+    right: 400px;
+  }
+  
+  #hour2 {
+    right: 335px;
+  }
+  
+  .sep2 {
+    right: 315px;
+    line-height: 60px;
+  }
+  
+  #min1 {
+    right: 250px;
+  }
+  
+  #min2 {
+    right: 185px;
+  }
+  
+  .sep1 {
+    right: 165px;
+    line-height: 60px;
+  }
+  
+  #sec1 {
+    right: 100px;  
+  }
+  
+  #sec2 {
+    right: 30px;
+  }
+  
+  .n0 {
+    top: 302px;
+  }
+  
+  .n1 {
+    top: calc(302px - 60px)
+  }
+  
+  .n2 {
+    top: calc(302px - (60px * 2))
+  }
+  
+  .n3 {
+    top: calc(302px - (60px * 3))
+  }
+  
+  .n4 {
+    top: calc(302px - (60px * 4))
+  }
+  
+  .n5 {
+    top: calc(302px - (60px * 5))
+  }
+  
+  .n6 {
+    top: calc(302px - (60px * 6))
+  }
+  
+  .n7 {
+    top: calc(302px - (60px * 7))
+  }
+  
+  .n8 {
+    top: calc(302px - (60px * 8))
+  }
+  
+  .n9 {
+    top: calc(302px - (60px * 9))
+  }
+}
