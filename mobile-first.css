@@ -214,6 +214,10 @@ body {
     color: #76394B;
   }
 
+  .flex-container5 .list ul {
+    padding: 20px;
+  }
+
   .badge {
     width: 200px;
   }

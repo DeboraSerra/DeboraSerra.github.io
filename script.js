@@ -2,16 +2,20 @@ let links = document.querySelector('#my-projects');
 
 let projectLink = [
   "https://deboraserra.github.io/Project-lessons-learned/project-block3.html",
+  "https://github.com/DeboraSerra/DeboraSerra.github.io/tree/main/Project-zoo-functions",
   "https://deboraserra.github.io/Project-pixel-art/index.html",
   "https://deboraserra.github.io/Project-to-do-list/index.html",
   "https://deboraserra.github.io/Project-mystery-letter/index.html",
   "https://deboraserra.github.io/Project-meme-generator/index.html",
   "https://deboraserra.github.io/Project-color-guess/index.html",
   "https://deboraserra.github.io/Project-Trybewarts/index.html",
-  "https://deboraserra.github.io/Clock/index.html"
+  "https://deboraserra.github.io/Clock/index.html",
+  "https://github.com/DeboraSerra/DeboraSerra.github.io/tree/main/Project-zoo-functions",
+  "https://deboraserra.github.io/Project-shopping-cart/index.html",
 ];
 let projectText = [
   'Project Lessons Learned',
+  'Project Playground Functions',
   'Project Pixel Art',
   'Project To Do List',
   'Project Mystery Letter',
@@ -19,6 +23,8 @@ let projectText = [
   'Project Color Guess',
   'Project Trybewarts',
   'Clock (Personal project)',
+  'Project Zoo Functions',
+  'Project Shopping Cart',
 ]
 
 for (let i = 0; i < projectLink.length; i += 1) {
