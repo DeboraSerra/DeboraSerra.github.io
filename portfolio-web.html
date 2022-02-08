@@ -5,17 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Web</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile-first.css">
+    <script src="https://kit.fontawesome.com/c622117a22.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <nav>
-      <ol id="index" class="flex-container">
-        <li class="box1"><a href=#profile>Who am I</a></li>
-        <li class="box1"><a href=#professional-life>My professional history</a></li>
-        <li class="box1"><a href=#skills>My skills</a></li>
-        <li class="box1"><a href=#footer>My social media</a></li>
-        <li class="box1"><a href="#project-links">My projects</a></li>
-      </ol>
+      <section class="sand-icon-sect">
+        <label for="menu-icon"><i class="fas fa-bars sand-icon"></i></label>
+      </section>
+      <input type="checkbox" id="menu-icon">
+      <section id="menu">
+        <label for="menu-icon">X</label>
+        <ol id="index" class="flex-container">
+          <li class="box1"><a href=#profile>Who am I</a></li>
+          <li class="box1"><a href=#professional-life>My professional history</a></li>
+          <li class="box1"><a href=#skills>My skills</a></li>
+          <li class="box1"><a href=#footer>My social media</a></li>
+          <li class="box1"><a href="#project-links">My projects</a></li>
+        </ol>
+      </section>
     </nav>
 
     
@@ -48,7 +56,6 @@
         
             <p>My favorite music genre is Rock, but I listen a bit of almost everything, depending on the day (rsrs).</p>
 
-            <p>A blog that I used to love when I had more time was <a href="https://acidezfeminina.com.br/" target="_blank">this one</a>.</p>
           </section>
         </section>
       </section>
@@ -72,13 +79,14 @@
             <li>Starting html;</li>
             <li>Starting css;</li>
             <li>Starting JavaScript;</li>
+            <li>Starting React;</li>
             <li>Analitic Chemistry.</li>
           </ul>
         </div>
       
 
         <section id="project-links" class="list">
-          <h3>My projects</h3>
+          <h3 class="link">My projects</h3>
           <ul id="my-projects"></ul>
         </section>
       </section>

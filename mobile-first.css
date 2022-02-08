@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1E2434;
+  color: #CDB9AE;
+  font-family: monospace;
+}
+
+.sand-icon-sect {
+  background-color: #504448;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 5px;
+}
+
+#menu-icon {
+  display: none;
+}
+
+#menu {
+  display: flex;
+  font-size: 1.7em;
+  background-color: #76394B;
+  line-height: 1.3em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-105%);
+}
+
+#menu a {
+  color: #CDB9AE;
+  text-decoration: none;
+  padding: 10px;
+}
+
+#menu label {
+  position: absolute;
+  right: 0;
+  padding: 3px;
+  background-color: #CDB9AE;
+  color: #76394B;
+}
+
+#menu-icon:checked ~ #menu {
+  transform: translate(0);
+}
+
+.flex-container3, .flex-container2, .flex-container4, .flex-container5, .flex-container6 {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5em;
+  text-align: center;
+  align-items: center;
+}
+
+#img {
+  width: 300px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+#name, #profile, #professional-life, .link {
+  width: 100vw;
+  margin: 30px 0;
+  background-color: #504448;
+  padding: 8px;
+}
+
+.me p {
+  margin-bottom: 30px;
+  line-height: 1.4em;
+  width: 90vw;
+}
+
+#Fred {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+#about-me p {
+  text-align: justify;
+  line-height: 1.4em;
+  width: 90vw;
+  margin: 0 auto 30px auto;
+}
+
+.flex-container4 p {
+  text-align: justify;
+  width: 90vw;
+  margin: 0 auto 30px auto;
+}
+
+#skills, #my-projects {
+  text-align: justify;
+  width: fit-content;
+  margin: 0 auto 30px auto;
+  list-style: none;
+  line-height: 1.4em;
+}
+
+#my-projects a {
+  color: #CDB9AE;
+  text-decoration: none;
+}
+
+#linkedin, #github {
+  width: 60px;
+  border-radius: 50%;
+  margin: 0 5px 30px 5px;
+}
+
+.badge {
+  width: 140px;
+  margin-bottom: 30px;
+}
+
+#back {
+  color: #CDB9AE;
+  font-size: 1.2em;
+  margin-bottom: 50px;
+  background-color: #76394B;
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 576px) {
+  #menu {
+    width: 90vw;
+    line-height: 1.7em;
+  }
+
+  #menu a {
+    margin-left: 60px;
+  }
+
+  #about-me p {
+    line-height: 1.6em;
+    width: 80vw;
+  }
+
+  .flex-container4 p {
+    width: 80vw;
+    line-height: 1.6em;
+  }
+
+  #skills, #my-projects {
+    line-height: 1.6em;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .sand-icon-sect, #menu label {
+    display: none;
+  }
+
+  #menu {
+    transform: translate(0);
+    position: relative;
+    width: 100vw;
+  }
+
+  .flex-container {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    justify-content: space-around;
+    background-color: #504448;
+    font-size: 20px;
+    width: 100vw;
+  }
+
+  #menu a {
+    margin-left: 0px;
+  }
+
+  #menu a:hover {
+    background-color: #CDB9AE;
+    color: #76394B;
+  }
+
+  .me p {
+    width: 50vw;
+  }
+
+  #about-me p {
+    width: 70vw;
+  }
+
+  .flex-container4 p {
+    width: 70vw;
+  }
+
+  .flex-container5 {
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-evenly;
+  }
+
+  .link {
+    width: auto;
+  }
+
+  .flex-container5 .list ul, .flex-container5 #my-projects a {
+    margin-left: 0;
+    background-color: #CDB9AE;
+    color: #76394B;
+  }
+
+  .badge {
+    width: 200px;
+  }
+}

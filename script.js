@@ -8,6 +8,7 @@ let projectLink = [
   "https://deboraserra.github.io/Project-meme-generator/index.html",
   "https://deboraserra.github.io/Project-color-guess/index.html",
   "https://deboraserra.github.io/Project-Trybewarts/index.html",
+  "https://deboraserra.github.io/Clock/index.html"
 ];
 let projectText = [
   'Project Lessons Learned',
@@ -16,7 +17,8 @@ let projectText = [
   'Project Mystery Letter',
   'Project Meme Generator',
   'Project Color Guess',
-  'Project Trybewarts'
+  'Project Trybewarts',
+  'Clock (Personal project)',
 ]
 
 for (let i = 0; i < projectLink.length; i += 1) {
@@ -24,7 +26,7 @@ for (let i = 0; i < projectLink.length; i += 1) {
   let anchor = document.createElement('a');
   let reference = projectLink[i];
   anchor.href = reference;
-  anchor.target = '_black';
+  anchor.target = '_blank';
   anchor.innerText = projectText[i];
   list.appendChild(anchor);
   links.appendChild(list);
