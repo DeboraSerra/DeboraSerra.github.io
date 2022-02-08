@@ -1,0 +1,157 @@
+* {
+  background-color: rgb(253, 251, 251);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+  color: rgb(75, 28, 28);
+}
+
+#header {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+#menu li, #menu a {
+  list-style: none;
+  text-decoration: none;
+  line-height: 2em;
+}
+
+#menu {
+  position: absolute;
+  top: 70px;
+  transform: translate(-105%);
+  width: 100vw;
+  transition: all 500ms ease;
+}
+
+#menu-icon:checked ~ #menu {
+  transform: translate(0);
+}
+
+#menu-icon {
+  display: none;
+}
+
+#my-pic {
+  width: 80vw;
+  display: block;
+  margin: 15px auto;
+  border-radius: 15px;
+}
+
+#main {
+  width: 90vw;
+  margin: 20px auto;
+}
+
+.left-side h2, .right-side h3 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.left-side p, .right-side p {
+  font-size: 1.5em;
+  text-align: justify;
+  line-height: 1.6em;
+  width: 90%;
+  margin: 0 auto 15px auto;
+}
+
+#lessons_learned {
+  list-style-position: inside;
+  font-size: 1.5em;
+  width: 90%;
+  margin: 0 auto 15px auto;
+}
+
+table td {
+  border: 1px solid rgb(75, 28, 28);
+}
+
+table {
+  font-size: 1.5em;
+  margin: 0 auto 15px auto;
+}
+
+#lessons-to-learn {
+  font-size: 1.2em;
+  list-style-position: inside;
+  width: fit-content;
+  margin: 0 auto 15px auto;
+}
+
+#footer {
+  font-size: 1.5em;
+  margin: 0 auto 50px auto;
+  width: 90%;
+}
+
+@media screen and (min-width: 550px) {
+  #menu {
+    top: 50px;
+  }
+
+  #my-pic {
+    width: 50vw;
+  }
+
+  #lessons_learned {
+    width: 70%;
+    margin: 0 auto 15px auto;
+  }
+
+  table {
+    font-size: 1.8em;
+  }
+
+  #lessons-to-learn {
+    font-size: 1.5em;
+    list-style-position: inside;
+    width: fit-content;
+    margin: 0 auto 15px auto;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  #title:hover {
+    background-color: rgb(75, 28, 28);
+    color: rgb(253, 251, 251);
+  }
+  
+  #my-pic {
+    width: 40%;
+    max-width: 400px;
+  }
+  
+  #main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .left-side, .right-side {
+    width: 50%;
+    margin: 0 15px 15px 15px;
+  }
+
+  #lessons_learned {
+    width: fit-content;
+  }
+
+  .flex-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  table {
+    order: 1;
+    margin: 30px auto 30px;
+  }
+
+  #footer {
+    text-align: center;
+    margin: 30px auto 80px auto;
+  }
+}
