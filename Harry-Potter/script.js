@@ -56,9 +56,7 @@ const getAllCharacters = async (url) => {
 //HANDLERS
 
 const clearContent = () => {
-  characterContainer
-    .querySelectorAll('.character')
-    .forEach((item) => item.remove());
+  characterContainer.innerHTML = '';
   clearContainer.querySelector('.clear').remove();
   crest.src = './images/dopely_Hogwarts-houses-949x1024.png';
   crest.alt = 'Hogwarts\' crest';
