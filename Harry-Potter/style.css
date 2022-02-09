@@ -1,0 +1,167 @@
+:root {
+  --red: #620B0A;
+  --gold: rgb(207, 159, 1);
+  --green:  #013C19;
+  --silver: rgb(138, 143, 129);
+  --black: #131201;
+  --yellow: #B7A802;
+  --blue: rgb(22, 44, 79);
+  --yellowish: #946B2D;
+  --light-gray: rgb(225, 229, 235);
+  --gray1: rgb(62, 66, 75);
+  --gray2: rgb(40, 42, 47);
+  --gray3: rgb(30, 31, 36);
+  --gray4: rgb(26, 27, 28);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--gray1);
+  font-family: 'Harry Potter', sans-serif;
+}
+
+header {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 30px;
+  color: var(--silver);
+  text-shadow: 0 0 10px black;
+}
+
+main {
+  margin-bottom: 100px;
+}
+
+.crest {
+  max-height: 50vh;
+  width: 80vw;
+  max-width: 350px;
+  display: block;
+  margin: 30px auto;
+}
+
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 300px;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
+
+.h1 {
+  font-size: 3rem;
+}
+
+.h2 {
+  font-size: 2rem;
+}
+
+.button {
+  background-color: var(--gray3);
+  padding: 8px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-shadow: 0 0 40px var(--silver);
+  box-shadow: 0 0 50px var(--gray4);
+}
+
+.button:hover {
+  background-color: var(--light-gray);
+  color: var(--gray4);
+}
+
+.btn-title {
+  margin-top: 50px;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+.character {
+  background-color: var(--gray2);
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 20px;
+  box-shadow: 0 0 20px var(--gray4);
+}
+
+.gryffindor {
+  background-color: var(--red);
+  color: var(--gold);
+}
+
+.slytherin {
+  background-color: var(--green);
+  color: var(--silver);
+}
+
+.hufflepuff {
+  background-color: var(--yellow);
+  color: var(--black)
+}
+
+.ravenclaw {
+  background-color: var(--blue);
+  color: var(--yellowish);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+  margin: 20px auto;
+}
+
+.character img {
+  width: 90%;
+}
+
+.clear {
+  text-align: center;
+}
+
+.clear-btn-container {
+  width: fit-content;
+  margin: auto;
+}
+
+@media screen and (min-width: 850px) {
+  .btn-container {
+    max-width: 80vw;
+  }
+
+  .h1 {
+    font-size: 3.5rem;
+  }
+
+  .h2 {
+    font-size: 2.3rem;
+  }
+
+  .p {
+    font-size: 1.6rem;
+  }
+
+  .content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 85vw;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .character {
+    width: 350px;
+  }
+}
