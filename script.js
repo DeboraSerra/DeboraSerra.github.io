@@ -12,6 +12,7 @@ let projectLink = [
   "https://deboraserra.github.io/Clock/index.html",
   "https://github.com/DeboraSerra/DeboraSerra.github.io/tree/main/Project-zoo-functions",
   "https://deboraserra.github.io/Project-shopping-cart/index.html",
+  "https://deboraserra.github.io/Harry-Potter/index.html",
 ];
 let projectText = [
   'Project Lessons Learned',
@@ -25,6 +26,7 @@ let projectText = [
   'Clock (Personal project)',
   'Project Zoo Functions',
   'Project Shopping Cart',
+  'Harry Potter Characters (Personal project)',
 ]
 
 for (let i = 0; i < projectLink.length; i += 1) {

@@ -40,13 +40,17 @@ const createImageElement = (url, name, alive) => {
 //FETCHERS
 
 const getAllCharacters = async (url) => {
-  const response = await fetch(url);
-  const data = await response.json();
-  const characters = data.map((character) => {
-    const {name, house, wand, patronus, actor, alive, image} = character;
-    return { name, house, wand, patronus, actor, alive, image};
-  })
-  return characters;
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    const characters = data.map((character) => {
+      const {name, house, wand, patronus, actor, alive, image} = character;
+      return { name, house, wand, patronus, actor, alive, image};
+    })
+    return characters;
+  } catch (error) {
+    characterContainer.innerHTML = error.message;
+  }
 }
 
 //HANDLERS
