@@ -21,7 +21,7 @@ body {
   box-shadow: 0 0 20px rgba(141, 119, 119, 0.404);
   text-align: center;
   margin: 5px;
-  transition: .3s;
+  transition: .5s;
 }
 
 #hour1 {
@@ -67,39 +67,39 @@ body {
 }
 
 .n1 {
-  top: calc(302px - 40px)
+  top: calc(302px - 40px);
 }
 
 .n2 {
-  top: calc(302px - 80px)
+  top: calc(302px - 2 * 40px);
 }
 
 .n3 {
-  top: calc(302px - 120px)
+  top: calc(302px - 3 * 40px);
 }
 
 .n4 {
-  top: calc(302px - 160px)
+  top: calc(302px - 4 * 40px);
 }
 
 .n5 {
-  top: calc(302px - 200px)
+  top: calc(302px - 5 * 40px);
 }
 
 .n6 {
-  top: calc(302px - 240px)
+  top: calc(302px - 6 * 40px);
 }
 
 .n7 {
-  top: calc(302px - 280px)
+  top: calc(302px - 7 * 40px);
 }
 
 .n8 {
-  top: calc(302px - 320px)
+  top: calc(302px - 8 * 40px);
 }
 
 .n9 {
-  top: calc(302px - 360px)
+  top: calc(302px - 9 * 40px);
 }
 
 .secs1, .secs2 {
@@ -157,38 +157,38 @@ body {
   }
   
   .n1 {
-    top: calc(302px - 60px)
+    top: calc(302px - 60px);
   }
   
   .n2 {
-    top: calc(302px - (60px * 2))
+    top: calc(302px - (60px * 2));
   }
   
   .n3 {
-    top: calc(302px - (60px * 3))
+    top: calc(302px - (60px * 3));
   }
   
   .n4 {
-    top: calc(302px - (60px * 4))
+    top: calc(302px - (60px * 4));
   }
   
   .n5 {
-    top: calc(302px - (60px * 5))
+    top: calc(302px - (60px * 5));
   }
   
   .n6 {
-    top: calc(302px - (60px * 6))
+    top: calc(302px - (60px * 6));
   }
   
   .n7 {
-    top: calc(302px - (60px * 7))
+    top: calc(302px - (60px * 7));
   }
   
   .n8 {
-    top: calc(302px - (60px * 8))
+    top: calc(302px - (60px * 8));
   }
   
   .n9 {
-    top: calc(302px - (60px * 9))
+    top: calc(302px - (60px * 9));
   }
 }
