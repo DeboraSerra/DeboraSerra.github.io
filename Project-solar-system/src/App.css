@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('https://i.pinimg.com/originals/02/f2/64/02f2649eaa7743a8e0a117c3e0a386ee.jpg');
+}
+
+h1 {
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+}
+
+h2 {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 30px;
+  color: white;
+  font-size: 3rem;
+  margin: 50px auto;
+  text-align: center;
+  text-shadow: 0 0 10px black;
+  width: 70%;
+}
+
+.planets-parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.planet-card {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  box-shadow: 0 0 30px black;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  width: 20%;
+  cursor: pointer;
+}
+
+.mission-card {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  height: 300px;
+  justify-content: space-around;
+  margin: 15px;
+  text-align: center;
+  width: 300px;
+}
+
+.planet-card:hover, .mission-card:hover {
+  background-color: black;
+}
+
+.planet-name {
+  color: white;
+  font-size: 2rem;
+}
+
+.planet-card img {
+  width: 90%;
+}
+
+.missions-parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.show-missions {
+  cursor: pointer;
+}
+
+.show-missions:hover {
+  background-color: black;
+}
