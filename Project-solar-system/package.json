@@ -2,7 +2,7 @@
   "name": "solar-system",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://deboraserra.github.io/Project-solar-system/",
+  "homepage": "https://deboraserra.github.io/Project-solar-system",
   "engines": {
     "node": "16"
   },
