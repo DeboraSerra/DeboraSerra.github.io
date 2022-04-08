@@ -131,6 +131,77 @@ body {
   border-radius: 5px;
 }
 
+.pop-up {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: #1e2434b7;
+}
+
+.box {
+  background-color: #76394B;
+  width: 80%;
+  max-width: 500px;
+  margin: auto;
+  height: 50%;
+  max-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  cursor: pointer;
+  top: 8px;
+  right: 8px;
+  background-color: transparent;
+  border: none;
+  color: #CDB9AE;
+  font-size: 1.5rem;
+}
+
+.close-btn:hover {
+  color: #1E2434;
+}
+
+.box h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 16px auto;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #1E2434;
+  width: 90%;
+}
+
+.box p {
+  width: 90%;
+  margin: auto;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.box a {
+  color: #CDB9AE;
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.box a:active {
+  color: #504448;
+}
+
+.box a:hover {
+  color: #1E2434;
+}
+
 @media screen and (min-width: 576px) {
   #menu {
     width: 90vw;

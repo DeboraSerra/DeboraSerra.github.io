@@ -1,4 +1,6 @@
 let links = document.querySelector('#my-projects');
+const closeBtn = document.querySelector('.close-btn');
+const popUp = document.querySelector('.pop-up');
 
 let projectLink = [
   "https://deboraserra.github.io/Project-lessons-learned/project-block3.html",
@@ -45,3 +47,7 @@ for (let i = 0; i < projectLink.length; i += 1) {
   list.appendChild(anchor);
   links.appendChild(list);
 }
+
+closeBtn.addEventListener('click', () => {
+  popUp.style.display = 'none';
+});
