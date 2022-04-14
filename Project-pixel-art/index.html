@@ -8,20 +8,17 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1 id="title">Paleta de Cores</h1>
-  <section id="color-palette">
-    <div class="color selected"></div>
-    <div class="color"></div>
-    <div class="color"></div>
-    <div class="color"></div>
-  </section>
-  <button id="clear-board">Limpar</button>
-
-  <input type="number" min="1" id="board-size">
-  <button id="generate-board">VQV</button>
-
-  <section id="pixel-board">
-    
+  <section class="body">
+    <h1 id="title">Paleta de Cores</h1>
+    <section id="color-palette">
+      <input type="color" class="color color-picker">
+    </section>
+    <section>
+      <button id="clear-board">Limpar</button>
+      <input type="number" min="1" id="board-size">
+      <button id="generate-board">VQV</button>
+    </section>
+    <section id="pixel-board" />
   </section>
   
   <script src="script.js"></script>
